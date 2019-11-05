@@ -1,0 +1,93 @@
+body {
+    color: #fff;
+    font: 24px Arial, sans-serif;
+    margin: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+/*----------- header -----------*/
+
+header {
+    display: grid;
+    grid-template-columns: 67.5% auto;
+    grid-column-gap: 4px;
+    margin-bottom: 10px;
+}
+
+.logo,
+.header-menu {
+    min-height: 100px;
+    text-align: center;
+    padding-top: 37px;
+    box-sizing: border-box;
+}
+
+.logo {
+    background-color: #ff6840;
+}
+
+.header-menu {
+    background-color: #ff9073;
+}
+
+/*----------- main -----------*/
+
+.content-block {
+    display: grid;
+    grid-template-rows: auto 280px 200px 280px auto;
+}
+
+/*----------- portfolio section -----------*/
+
+.portfolio {
+    background-color: #d1796d;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    padding: 7% 10px 5px 10px;
+}
+
+.portfolio__image {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 5px;
+}
+
+/*----------- about-us section -----------*/
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.icon-block, .text-block {
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+}
+
+.icon-block {
+    background-color: #fc000d;
+    min-height: 40%;
+    padding-top: 45px;
+}
+
+.text-block {
+    background-color: #c21200;
+    min-height: 55%;
+    padding-top: 60px;
+}
+
+/* TODO: advantages section, 
+         contacts section,
+         main-menu,
+         footer
+*/

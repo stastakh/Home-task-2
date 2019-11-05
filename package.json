@@ -4,7 +4,8 @@
   "description": "Responsive layout for home task",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp browser-sync"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/stastakh/Home-task-2/issues"
   },
-  "homepage": "https://github.com/stastakh/Home-task-2#readme"
+  "homepage": "https://github.com/stastakh/Home-task-2#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2"
+  }
 }

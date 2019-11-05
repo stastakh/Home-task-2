@@ -41,7 +41,7 @@ header {
 
 .content-block {
     display: grid;
-    grid-template-rows: auto 280px auto auto;
+    grid-template-rows: repeat(4, auto);
 }
 
 /*----------- portfolio section -----------*/
@@ -69,7 +69,8 @@ header {
     margin-bottom: 5px;
 }
 
-.icon-block, .text-block {
+.icon-block, 
+.text-block {
     box-sizing: border-box;
     width: 100%;
     text-align: center;
@@ -77,13 +78,14 @@ header {
 
 .icon-block {
     background-color: #fc000d;
-    min-height: 40%;
+    min-height: 100px;
+    margin-bottom: 5px;
     padding-top: 45px;
 }
 
 .text-block {
     background-color: #c21200;
-    min-height: 55%;
+    min-height: 200px;
     padding-top: 60px;
 }
 
@@ -132,9 +134,11 @@ header {
 
 .main-menu {
     background-color: #c537ee;
+    height: 140px;
 }
 
 .main-menu__list {
+    list-style: none;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -160,4 +164,67 @@ footer {
     text-align: center;
     min-height: 100px;
     padding-top: 35px;
+}
+
+/*----------- tablet styling -----------*/
+
+@media screen and (min-width: 360px) {
+
+    /*----------- header -----------*/
+
+    header {
+        grid-template-columns: 100px auto;
+    }
+
+    /*----------- portfolio -----------*/
+
+    .portfolio {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 5%;
+    }
+    
+    .portfolio__image {
+        width: 49%;
+        height: 200px;
+        margin-bottom: 5px;
+    }
+
+    /*----------- about-us -----------*/
+
+    .about-us {
+        flex-direction: row;
+    }
+
+    .icon-block,
+    .text-block {
+        min-height: 140px;
+        padding-top: 60px;
+    }
+    
+    .icon-block {
+        width: 40%;
+        margin-bottom: 0;
+    }
+    
+    .text-block {
+        width: 59%;
+    }
+
+    /*----------- advantages -----------*/
+
+    .advantages-list__item {
+        min-height: 140px;
+        padding-top: 60px;
+    }
+
+    /*----------- grid wrapper -----------*/
+
+    .grid-wrapper {
+        grid-template-columns: 60% auto;
+        grid-column-gap: 5px;
+        margin-bottom: 0;
+    }
+
 }

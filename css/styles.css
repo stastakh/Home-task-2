@@ -65,7 +65,7 @@ header {
 .about-us {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 5px;
 }
 
@@ -204,12 +204,20 @@ footer {
     }
     
     .icon-block {
-        width: 40%;
+        width: 39.5%;
         margin-bottom: 0;
     }
     
     .text-block {
-        width: 59%;
+        width: 60%;
+    }
+
+    /*----------- grid wrapper -----------*/
+    
+    .grid-wrapper {
+        grid-template-columns: 60% auto;
+        grid-column-gap: 5px;
+        margin-bottom: 0;
     }
 
     /*----------- advantages -----------*/
@@ -218,13 +226,37 @@ footer {
         min-height: 140px;
         padding-top: 60px;
     }
+    
+}
 
-    /*----------- grid wrapper -----------*/
+/*----------- desktop styling -----------*/
 
-    .grid-wrapper {
-        grid-template-columns: 60% auto;
+@media screen and (min-width: 1025px) {
+
+    /*----------- portfolio -----------*/
+
+    .portfolio {
+        justify-content: space-between;
+    }
+    
+    .portfolio__image {
+        width: 24%;
+    }
+
+    /*----------- block wrapper -----------*/
+
+    .advantages-list {
+        grid-template-rows: repeat(2, auto);
         grid-column-gap: 5px;
-        margin-bottom: 0;
+    }
+
+    .advantages-list__item {
+        min-height: 200px;
+        padding-top: 80px;
+    }
+    
+    .advantages-list__item--main {
+        grid-column: 1 / span 2;
     }
 
 }

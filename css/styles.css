@@ -103,7 +103,7 @@ header {
     grid-template-rows: repeat(3, auto);
     grid-row-gap: 5px;
     list-style: none;
-    margin: 0 0 5px 0;
+    margin: 0 0 5px;
     padding: 0;
 }
 
@@ -243,7 +243,7 @@ footer {
         width: 24%;
     }
 
-    /*----------- block wrapper -----------*/
+    /*----------- advantages -----------*/
 
     .advantages-list {
         grid-template-rows: repeat(2, auto);

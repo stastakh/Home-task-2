@@ -1,0 +1,262 @@
+body {
+    color: #fff;
+    font: 24px Arial, sans-serif;
+    margin: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+/*----------- header -----------*/
+
+header {
+    display: grid;
+    grid-template-columns: 67.5% auto;
+    grid-column-gap: 4px;
+    margin-bottom: 5px;
+}
+
+.logo,
+.header-menu {
+    box-sizing: border-box;
+    min-height: 100px;
+    text-align: center;
+    padding-top: 37px;
+}
+
+.logo {
+    background-color: #ff6840;
+}
+
+.header-menu {
+    background-color: #ff9073;
+}
+
+/*----------- main -----------*/
+
+.content-block {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+}
+
+/*----------- portfolio section -----------*/
+
+.portfolio {
+    background-color: #d1796d;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    padding: 7% 10px 5px 10px;
+}
+
+.portfolio__image {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 5px;
+}
+
+/*----------- about-us section -----------*/
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.icon-block, 
+.text-block {
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+}
+
+.icon-block {
+    background-color: #fc000d;
+    min-height: 100px;
+    margin-bottom: 5px;
+    padding-top: 45px;
+}
+
+.text-block {
+    background-color: #c21200;
+    min-height: 200px;
+    padding-top: 60px;
+}
+
+/*----------- grid wrapper -----------*/
+
+.grid-wrapper {
+    display: grid;
+    margin-bottom: 5px;
+}
+
+/*----------- advantages -----------*/
+
+.advantages-list {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-row-gap: 5px;
+    list-style: none;
+    margin: 0 0 5px;
+    padding: 0;
+}
+
+.advantages-list__item {
+    background-color: #ff9200;
+    box-sizing: border-box;
+    text-align: center;
+    min-height: 100px;
+    width: 100%;
+    padding-top: 40px;
+}
+
+/*----------- contacts -----------*/
+
+.block-wrapper {
+    margin-bottom: 5px;
+}
+
+.contact-info {
+    background-color: #ff9534;
+    box-sizing: border-box;
+    text-align: center;
+    min-height: 400px;
+    padding-top: 200px;
+}
+
+/*----------- main-menu -----------*/
+
+.main-menu {
+    background-color: #c537ee;
+    height: 140px;
+}
+
+.main-menu__list {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu__list__item a {
+    color: inherit;
+    display: block;
+    text-decoration: none;
+}
+
+.main-menu__list__item a:hover,
+.main-menu__list__item a:active,
+.main-menu__list__item a:focus {
+    background-color: #6d4978;
+}
+
+/*----------- footer -----------*/
+
+footer {
+    background-color: #7100a2;
+    box-sizing: border-box;
+    text-align: center;
+    min-height: 100px;
+    padding-top: 35px;
+}
+
+/*----------- tablet styling -----------*/
+
+@media screen and (min-width: 360px) {
+
+    /*----------- header -----------*/
+
+    header {
+        grid-template-columns: 100px auto;
+    }
+
+    /*----------- portfolio -----------*/
+
+    .portfolio {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 5%;
+    }
+    
+    .portfolio__image {
+        width: 49%;
+        height: 200px;
+        margin-bottom: 5px;
+    }
+
+    /*----------- about-us -----------*/
+
+    .about-us {
+        flex-direction: row;
+    }
+
+    .icon-block,
+    .text-block {
+        min-height: 140px;
+        padding-top: 60px;
+    }
+    
+    .icon-block {
+        width: 39.5%;
+        margin-bottom: 0;
+    }
+    
+    .text-block {
+        width: 60%;
+    }
+
+    /*----------- grid wrapper -----------*/
+    
+    .grid-wrapper {
+        grid-template-columns: 60% auto;
+        grid-column-gap: 5px;
+        margin-bottom: 0;
+    }
+
+    /*----------- advantages -----------*/
+
+    .advantages-list__item {
+        min-height: 140px;
+        padding-top: 60px;
+    }
+    
+}
+
+/*----------- desktop styling -----------*/
+
+@media screen and (min-width: 1025px) {
+
+    /*----------- portfolio -----------*/
+
+    .portfolio {
+        justify-content: space-between;
+    }
+    
+    .portfolio__image {
+        width: 24%;
+    }
+
+    /*----------- advantages -----------*/
+
+    .advantages-list {
+        grid-template-rows: repeat(2, auto);
+        grid-column-gap: 5px;
+    }
+
+    .advantages-list__item {
+        min-height: 200px;
+        padding-top: 80px;
+    }
+    
+    .advantages-list__item--main {
+        grid-column: 1 / span 2;
+    }
+
+}
